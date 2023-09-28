@@ -88,7 +88,7 @@ if (results.solver.status == SolverStatus.ok) and (results.solver.termination_co
                print('x[' ,i+1, '][ ', j+1,']: ', round(pyo.value(x[i,j]),2))
     print(" " )
     for i in range_i:
-        print('u[' ,i ,']: ', round(pyo.value(u[i]),2))
+        print('u[' ,i+1,']: ', round(pyo.value(u[i]),2))
 elif (results.solver.termination_condition == TerminationCondition.infeasible):
    print('Model is unfeasible')
   #print('Solver Status is =', results.solver.status)
